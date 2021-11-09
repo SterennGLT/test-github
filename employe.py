@@ -13,6 +13,7 @@ class Employe:
     
 class Responsable(Employe):
     def __init__(self, identifiant, nom, rang):  
+        Employe.__init__(self, identifiant, nom)
         self.id = identifiant
         self.nom = nom
         self.type = "Responsable"
